@@ -4,9 +4,9 @@ This script uses a CI-V command to update the GPS position in the radio.
 
 ## Requirements
 
-> IC-7100
-> Raspberry Pi with a GPS device and Python 2.7.9
-> Connected with USB cable
+- Icom IC-7100 Radio
+- Raspberry Pi with a GPS device and Python 2.7.9
+- Connected with USB cable
 
 Make sure gpsd is installed and configure it to to read from your GPS.
 
@@ -45,9 +45,9 @@ Clone this repo
 ```cd ./ic7100-gps-updater```
 
 ```
-pi@raspberrypi2:~/ic7100-gps-updater $ sudo python ./update_gps.py
-Update sent.
+sudo python ./update_gps.py
 ```
+> Update sent.
 
 ## Add a job to do it every 5 minutes
 
