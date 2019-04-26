@@ -2,7 +2,6 @@
 
 from gps import *
 import time 
-import serial
 import os
 
 gpsd = gps(mode=WATCH_ENABLE|WATCH_NEWSTYLE)
