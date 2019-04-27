@@ -56,7 +56,7 @@ sudo python ./update_gps.py
 Add this line at the bottom of the file and save
 
 ```
-*/5 * * * * python /home/pi/ic7100-gps-updater/update_gps.py
+*/5 * * * * /usr/bin/python /home/pi/ic7100-gps-updater/update_gps.py
 ```
 
 ## Caveats
