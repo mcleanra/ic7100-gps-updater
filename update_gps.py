@@ -55,7 +55,7 @@ def send_update(gpsdata):
     if gpsdata['class'] == 'TPV':
 	 payload = format_location(gpsdata)
 	 command = "\\0xFE\\0xFE\\0x88\\0xE0\\0x1A\\0x05\\0x01\\0x86" + payload + "\\0xFD"
-         command = "rigctl -m 2 w \"" + command + "\""
+         command = "rigctld -m 370 -r /dev/ttyUSB0 w \"" + command + "\""
 	 print command + "\n"
 	 os.system(command)
 	 raise SystemExit
