@@ -71,10 +71,10 @@ try:
         time.sleep(1)
 
 except (SystemError):
-    print "No GPS fix."
+    print "No GPS fix.\n"
 
 except (SystemExit):
-    print "Update sent."
+    print "Update sent.\n"
 
 except (KeyboardInterrupt): #when you press ctrl+c
-    print "Done.\nExiting."
+    print "Done. Exiting.\n"
